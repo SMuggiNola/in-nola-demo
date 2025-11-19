@@ -1,6 +1,8 @@
 /* =========================================
    GLOBAL THEME — IN-NOLA Demo
 ========================================= */
+
+/* CSS Custom Properties for Theme Colors */
 :root {
   --gold: #d4af37;
   --gold-light: #ffe8a8;
@@ -22,6 +24,8 @@
 /* ======================================================
    Background + Typography
 ====================================================== */
+
+/* Main body styling with gradient background and centered content */
 body {
   font-family: 'Cormorant Garamond', serif;
   color: var(--gold-light);
@@ -34,7 +38,7 @@ body {
   text-align: center;
 }
 
-/* Kells watermark */
+/* Kells watermark background - overlay with opacity and filters */
 body::before {
   content: "";
   position: fixed;
@@ -48,6 +52,8 @@ body::before {
 /* ======================================================
    Headings
 ====================================================== */
+
+/* Apply shared styling to h1 and h2 */
 h1, h2 {
   font-family: 'Cinzel Decorative', serif;
   text-shadow:
@@ -55,6 +61,7 @@ h1, h2 {
     0 0 24px rgba(200,155,60,0.35);
 }
 
+/* Main heading styling with enhanced text shadow and color */
 h1 {
   color: #000;
   font-size: 3.2rem;
@@ -65,6 +72,7 @@ h1 {
     0 0 60px rgba(160,120,30,0.5);
 }
 
+/* Subheading styling with gold color and spacing */
 h2 {
   font-size: 1.55rem;
   color: var(--gold);
@@ -74,6 +82,8 @@ h2 {
 /* ======================================================
    Paragraphs
 ====================================================== */
+
+/* Paragraph styling with max-width for readability */
 p {
   font-size: 1.2rem;
   max-width: 720px;
@@ -85,6 +95,8 @@ p {
 /* ======================================================
    Button Grid
 ====================================================== */
+
+/* Navigation grid layout for buttons */
 .nav-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -97,6 +109,8 @@ p {
 /* ======================================================
    Base Button (ALL buttons share this)
 ====================================================== */
+
+/* Core button styling - shared across all navigation buttons */
 .btn {
   display: flex;
   align-items: center;
@@ -117,6 +131,7 @@ p {
   transition: 0.2s ease;
 }
 
+/* Hover effect for buttons - slight lift and darker background */
 .btn:hover {
   background: rgba(10, 60, 35, 1);
   transform: translateY(-2px);
@@ -125,11 +140,14 @@ p {
 /* ======================================================
    IN USA Button Variant
 ====================================================== */
+
+/* Special styling for the IN USA button with white background */
 .inusa-btn {
   background: #ffffff;
   border: 3px solid #0b6631;
 }
 
+/* Logo styling within IN USA button */
 .inusa-logo {
   max-height: 70%;
   width: auto;
@@ -138,6 +156,8 @@ p {
 /* ======================================================
    Footer
 ====================================================== */
+
+/* Footer styling with top border and semi-transparent background */
 .site-footer {
   margin-top: 4rem;
   padding: 1.5rem 1rem;
@@ -147,6 +167,7 @@ p {
   font-family: 'Cormorant Garamond', serif;
 }
 
+/* Footer line styling with flexbox alignment */
 .footer-line {
   display: flex;
   justify-content: center;
@@ -156,16 +177,19 @@ p {
   font-size: 0.95rem;
 }
 
+/* Footer link styling */
 .footer-line a {
   text-decoration: none;
   font-weight: 600;
   color: #d4af37;
 }
 
+/* Footer link hover effect */
 .footer-line a:hover {
   text-decoration: underline;
 }
 
+/* Gaelic name styling with enhanced letter spacing */
 .name-gaelic {
   font-weight: 600;
   letter-spacing: 0.03em;
