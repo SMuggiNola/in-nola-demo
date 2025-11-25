@@ -94,6 +94,13 @@ p {
   margin-top: 2rem;
 }
 
+/* Centered buttons with flexbox */
+.nav-grid.centered-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* optional spacing between buttons */
+}
+
 /* ======================================================
    Base Button (ALL buttons share this)
 ====================================================== */
@@ -367,4 +374,33 @@ p {
   0%   { opacity: 1; }
   60%  { opacity: 1; }
   100% { opacity: 0; visibility: hidden; }
+}
+
+
+/* New style for top event buttons */
+.top-event-buttons {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+}
+
+.top-event-buttons .btn {
+  width: 100%;
+  padding: 1rem 1.5rem; /* Optional, adjust as needed */
+}
+
+
+
+/* Optional spacing between buttons (adjust as needed) */
+.top-event-buttons .btn + .btn {
+  margin-left: 1rem;
+}
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure children are centered */
+  text-align: center;
+}
+.nav-grid + h2 {
+  margin-top: 2rem;
 }
