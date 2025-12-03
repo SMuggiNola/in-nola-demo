@@ -16,6 +16,8 @@
 
 <body id="landing">
 
+  <div id="main-header-placeholder"></div>
+
   <div id="splash-screen">
   <h1>Irish Network NOLA</h1>
   <p>Fáilte — Welcome</p>
@@ -52,7 +54,7 @@
       <a href="#" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
     </div>
     <p class="footer-line">
-      Copyright &copy; 2024, Irish Network New Orleans. All Rights Reserved.
+      Copyright &copy; 2025, Irish Network New Orleans. All Rights Reserved.
     </p>
     <p class="footer-line">
       Website created by <a href="https://AiEmpoweredU.org" target="_blank" rel="noopener">AiEmpoweredU.org</a>.
@@ -60,16 +62,7 @@
   </footer>
 </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const mainContent = document.getElementById('main-content');
-    // The splash screen animation is 2.8s in the CSS.
-    // We'll start the fade-in of the main content shortly before it ends.
-    setTimeout(() => {
-      mainContent.classList.add('fade-in');
-    }, 2000); // Start fade-in at 2 seconds
-  });
-</script>
+<script src="/js/main.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="../../assets/in_logo.png">
   <meta charset="UTF-8">
   <title>Our Library | Irish Network NOLA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,114 +17,126 @@
 
 <body>
 
-  <main class="page-content">
+  <div id="main-header-placeholder"></div>
 
-    <h1>Our Library</h1>
-    <p>
-      A growing community archive dedicated to documenting, celebrating, and
-      preserving the stories of the Irish in New Orleans.
-    </p>
+  <div id="main-content">
+    <main class="page-content">
 
-    <!-- CALL TO ACTION / INVITATION -->
-    <details class="board-member" open>
-      <summary>Contribute to the Story of Irish New Orleans</summary>
-      <div class="member-content">
-        <p>
-          We’re building a living record — not just of dates and headlines,
-          but of families, neighborhoods, songs, struggles, triumphs,
-          migrations, friendships, and everyday life. If you or your family
-          has roots in Ireland or the Irish diaspora of New Orleans, your
-          story belongs here.
-        </p>
-        <p>
-          We welcome historians, archivists, librarians, genealogists,
-          musicians, dancers, business owners, storytellers, students,
-          and curious neighbors. If you have insight, you have value.
-        </p>
+      <h1>Our Library</h1>
+      <p>
+        A growing community archive dedicated to documenting, celebrating, and
+        preserving the stories of the Irish in New Orleans.
+      </p>
+
+      <!-- CALL TO ACTION / INVITATION -->
+      <details class="board-member" open>
+        <summary>Contribute to the Story of Irish New Orleans</summary>
+        <div class="member-content">
+          <p>
+            We’re building a living record — not just of dates and headlines,
+            but of families, neighborhoods, songs, struggles, triumphs,
+            migrations, friendships, and everyday life. If you or your family
+            has roots in Ireland or the Irish diaspora of New Orleans, your
+            story belongs here.
+          </p>
+          <p>
+            We welcome historians, archivists, librarians, genealogists,
+            musicians, dancers, business owners, storytellers, students,
+            and curious neighbors. If you have insight, you have value.
+          </p>
+        </div>
+      </details>
+
+      <!-- CONTRIBUTION FORM -->
+      <form class="contact-form" style="margin-top:2rem;">
+        <label>
+          Your Name
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          How Would You Like to Contribute?
+          <textarea name="contribution" rows="6"
+            placeholder="A family story, historic photo, research expertise, book recommendations, organizations to contact, etc."
+            required></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-gold">Submit Contribution</button>
+      </form>
+
+      <!-- FUTURE VISION -->
+      <details class="board-member" style="margin-top:2.5rem;">
+        <summary>What We’re Building</summary>
+        <div class="member-content">
+          <p>
+            The long-term goal is an open, interactive, searchable, and
+            beautifully accessible public database — a digital home for
+            documents, oral histories, photographs, literature, academic work,
+            and community knowledge.
+          </p>
+          <p>
+            No paywalls. No gatekeeping. Just shared heritage, freely given and
+            responsibly preserved.
+          </p>
+
+          <p style="margin-top:1rem;">
+            ➤ Explore a sample entry:<br>
+            <a href="./Paddy_Profile.html" class="btn btn-gold" style="margin-top:0.5rem;">
+              Profile in Progress: Patrick "Paddy" &amp; John "JJ" Muggivan
+            </a>
+          </p>
+        </div>
+      </details>
+
+      <!-- PREVIOUS WORK REFERENCE -->
+      <details class="board-member">
+        <summary>See Related Work</summary>
+        <div class="member-content">
+          <p>
+            Curious about the data-driven storytelling approach behind this
+            project? Explore:
+          </p>
+          <p>
+            <a href="https://MuggsOfDataSci.net" target="_blank" rel="noopener">
+              MuggsOfDataSci.net
+            </a>
+          </p>
+          <p>
+            These projects demonstrate the techniques and philosophy that will
+            shape Our Library — accessible data, community ownership, and
+            storytelling through evidence. Be sure to "Request Access" to fully
+            explore the website (which is a work in progress).
+          </p>
+        </div>
+      </details>
+
+      <!-- RETURN -->
+      <div class="back-link" style="margin-top:3rem;">
+        <a href="../index.html">← Return to Our Village</a>
       </div>
-    </details>
 
-    <!-- CONTRIBUTION FORM -->
-    <form class="contact-form" style="margin-top:2rem;">
-      <label>
-        Your Name
-        <input type="text" name="name" placeholder="Enter your name" required>
-      </label>
+    </main>
 
-      <label>
-        Email Address
-        <input type="email" name="email" placeholder="you@example.com" required>
-      </label>
-
-      <label>
-        How Would You Like to Contribute?
-        <textarea name="contribution" rows="6"
-          placeholder="A family story, historic photo, research expertise, book recommendations, organizations to contact, etc."
-          required></textarea>
-      </label>
-
-      <button type="submit" class="btn btn-gold">Submit Contribution</button>
-    </form>
-
-    <!-- FUTURE VISION -->
-<details class="board-member" style="margin-top:2.5rem;">
-  <summary>What We’re Building</summary>
-  <div class="member-content">
-    <p>
-      The long-term goal is an open, interactive, searchable, and
-      beautifully accessible public database — a digital home for
-      documents, oral histories, photographs, literature, academic work,
-      and community knowledge.
-    </p>
-    <p>
-      No paywalls. No gatekeeping. Just shared heritage, freely given and
-      responsibly preserved.
-    </p>
-
-    <p style="margin-top:1rem;">
-      ➤ Explore a sample entry:<br>
-      <a href="./Paddy_Profile.html" class="btn btn-gold" style="margin-top:0.5rem;">
-        Profile in Progress: Patrick "Paddy" &amp; John "JJ" Muggivan
-      </a>
-    </p>
+    <footer class="site-footer">
+      <div class="social-links">
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      </div>
+      <p class="footer-line">
+        Copyright &copy; 2024, Irish Network New Orleans. All Rights Reserved.
+      </p>
+      <p class="footer-line">
+        Website created by <a href="https://AiEmpoweredU.org" target="_blank" rel="noopener">AiEmpoweredU.org</a>.
+      </p>
+    </footer>
   </div>
-</details>
 
-
-    <!-- PREVIOUS WORK REFERENCE -->
-    <details class="board-member">
-      <summary>See Related Work</summary>
-      <div class="member-content">
-        <p>
-          Curious about the data-driven storytelling approach behind this
-          project? Explore:
-        </p>
-        <p>
-          <a href="https://MuggsOfDataSci.net" target="_blank" rel="noopener">
-            MuggsOfDataSci.net
-          </a>
-        </p>
-        <p>
-          These projects demonstrate the techniques and philosophy that will
-          shape Our Library — accessible data, community ownership, and
-          storytelling through evidence. Be sure to "Request Access" to fully
-          explore the website (which is a work in progress).
-        </p>
-      </div>
-    </details>
-
-    <!-- RETURN -->
-    <div class="back-link" style="margin-top:3rem;">
-      <a href="../index.html">← Return to Our Village</a>
-    </div>
-
-  </main>
-
-  <footer class="site-footer">
-    <p class="footer-line">
-      Website created by <a href="https://AiEmpoweredU.org" target="_blank" rel="noopener">AiEmpoweredU.org</a>.
-    </p>
-  </footer>
+  <script src="/js/main.js"></script>
 
 </body>
 </html>

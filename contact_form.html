@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="/assets/in_logo.png">
   <meta charset="UTF-8">
   <title>Contact Us | Irish Network NOLA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +10,54 @@
 
 <body>
 
-  <main class="page-content">
+  <div id="main-header-placeholder"></div>
 
-    <h1>Send Us a Message</h1>
-    <p>Questions, ideas, or opportunities—drop us a note and we’ll be in touch.</p>
+  <div id="main-content">
+    <main class="page-content">
 
-    <form class="contact-form">
-      <label>
-        Your Name
-        <input type="text" name="name" placeholder="Enter your name" required>
-      </label>
+      <h1>Send Us a Message</h1>
+      <p>Questions, ideas, or opportunities—drop us a note and we’ll be in touch.</p>
 
-      <label>
-        Email Address
-        <input type="email" name="email" placeholder="you@example.com" required>
-      </label>
+      <form class="contact-form">
+        <label>
+          Your Name
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
 
-      <label>
-        Your Message
-        <textarea name="message" rows="6" placeholder="Write your message here…" required></textarea>
-      </label>
+        <label>
+          Email Address
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
 
-      <button type="submit" class="btn btn-gold">Send Message</button>
-    </form>
+        <label>
+          Your Message
+          <textarea name="message" rows="6" placeholder="Write your message here…" required></textarea>
+        </label>
 
-    <div class="back-link" style="margin-top:2rem;">
-      <a href="./index.html">← Return to Home</a>
-    </div>
+        <button type="submit" class="btn btn-gold">Send Message</button>
+      </form>
 
-  </main>
+      <div class="back-link" style="margin-top:2rem;">
+        <a href="./index.html">← Return to Home</a>
+      </div>
 
-  <footer class="site-footer">
-    <p class="footer-line">
-      Website created by <a href="https://AiEmpoweredU.org" target="_blank" rel="noopener">AiEmpoweredU.org</a>.
-    </p>
-  </footer>
+    </main>
+
+    <footer class="site-footer">
+      <div class="social-links">
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      </div>
+      <p class="footer-line">
+        Copyright &copy; 2024, Irish Network New Orleans. All Rights Reserved.
+      </p>
+      <p class="footer-line">
+        Website created by <a href="https://AiEmpoweredU.org" target="_blank" rel="noopener">AiEmpoweredU.org</a>.
+      </p>
+    </footer>
+  </div>
+
+  <script src="/js/main.js"></script>
 
 </body>
 </html>

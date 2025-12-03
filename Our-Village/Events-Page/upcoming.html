@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="/Our-Village/Events-Page/Screenshot 2025-12-03 122637.png">
   <meta charset="UTF-8">
   <title>Upcoming Events • Irish Network NOLA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,10 +98,13 @@
 
 <body id="events">
 
-  <h1>Upcoming Events</h1>
+  <div id="main-header-placeholder"></div>
 
-  <!-- ⭐ First Event: Holiday Party -->
-<div class="event-card" onclick="this.classList.toggle('open')">
+  <div id="main-content">
+    <h1>Upcoming Events</h1>
+
+    <!-- ⭐ First Event: Holiday Party -->
+<div class="event-card">
 
   <div class="event-header">
     <span>
@@ -108,7 +112,7 @@
       “There's An Irish Pub Everywhere”<br>
       1st Annual Holiday Party
     </span>
-    <span>+</span>
+    <span class="toggle">+</span>
   </div>
 
   <div class="event-body">
@@ -116,15 +120,11 @@
     <p><strong>Date:</strong> Tuesday, December 16th — 6pm</p>
     <p><strong>Location:</strong> Ember Indian Cuisine — 5606 Canal Blvd</p>
 
-    <p><strong>Details:</strong>  
-      Potluck dinner, cash bar, and a warm holiday evening 
-      <p>celebrating Irish culture in New Orleans.</p>
+    <p><strong>Details:</strong> Potluck dinner, cash bar, and a warm holiday evening celebrating Irish culture in New Orleans.</p>
 
-      <p>MUSIC - DANCING!!</p>
-    <p>
-      Join us for our first annual IN-NOLA Holiday Party —</p>   
-      <p>Bring a dish, bring a friend, bring good cheer.
-    </p>
+    <p><strong>Music & Dancing!</strong></p>
+
+    <p>Join us for our first annual IN-NOLA Holiday Party — bring a dish, bring a friend, bring good cheer.</p>
 
     <a href="#" class="more-btn">More Information</a>
 
@@ -133,9 +133,20 @@
 </div>
 
 
-  <!-- Add more event cards here later -->
+    <!-- Add more event cards here later -->
+    <div class="back-link" style="margin-top:2rem;">
+        <a href="../index.html">← Return to Our Village</a>
+    </div>
+  </div>
 
   <footer class="site-footer">
+    <div class="social-links">
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+    </div>
+    <p class="footer-line">
+      Copyright &copy; 2024, Irish Network New Orleans. All Rights Reserved.
+    </p>
     <p class="footer-line">
       Website created by
       <a href="https://AiEmpoweredU.org" target="_blank" rel="noopener">
@@ -144,16 +155,7 @@
     </p>
   </footer>
 
-  <script>
-    // Toggle +/- icon
-    document.querySelectorAll('.event-card').forEach(card => {
-      card.addEventListener('click', e => {
-        if (e.target.classList.contains('more-btn')) return;
-        const symbol = card.querySelector('.event-header span:last-child');
-        symbol.textContent = card.classList.contains('open') ? '-' : '+';
-      });
-    });
-  </script>
+  <script src="/js/main.js"></script>
 
 </body>
 </html>

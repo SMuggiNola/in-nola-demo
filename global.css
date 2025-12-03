@@ -143,6 +143,36 @@ p {
 }
 
 /* ======================================================
+   Site Header
+====================================================== */
+.site-header-main {
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--gold);
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+/* ======================================================
    Footer
 ====================================================== */
 .site-footer {
@@ -410,7 +440,7 @@ p {
 ========================================= */
 #main-content {
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -464,4 +494,44 @@ p {
 
 .footer-line {
   margin-bottom: 0.5rem; /* Add some space between footer lines */
+}
+
+/* =========================================
+   Responsive Design (Media Queries)
+========================================= */
+@media (max-width: 768px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    height: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .board-member summary {
+    font-size: 1.2rem;
+  }
 }
